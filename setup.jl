@@ -3,6 +3,9 @@ using Pkg
 #activate environment in working directory
 Pkg.activate(@__DIR__)
 
+#use system jupyter
+ENV["JUPYTER"] = "jupyter"
+
 #instantiate environment
 Pkg.instantiate()
 
